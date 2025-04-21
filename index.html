@@ -86,11 +86,11 @@
         <div class="container">
             <h2>Browse Categories</h2>
             <div class="category-buttons">
-                <button class="category-btn" data-category="birthday">Birthday</button>
+                <button class="category-btn" data-category="birthday" id="birthday-btn">Birthday</button>
                 <button class="category-btn" data-category="party" id="party-btn">Party</button>
                 <button class="category-btn" data-category="wedding" id="wedding-btn">Wedding</button>
-                <button class="category-btn" data-category="corporate">Corporate</button>
-                <button class="category-btn" data-category="festival">Festival</button>
+                <button class="category-btn" data-category="corporate" id="corporate-btn">Corporate</button>
+                <button class="category-btn" data-category="festival" id="festival-btn">Festival</button>
             </div>
         </div>
     </section>
@@ -305,6 +305,30 @@
             if (partyBtn) {
                 partyBtn.addEventListener('click', function() {
                     window.location.href = 'https://vardhan-it.github.io/eventica-1-party-events/';
+                });
+            }
+            
+            // Birthday button click handler
+            const birthdayBtn = document.getElementById('birthday-btn');
+            if (birthdayBtn) {
+                birthdayBtn.addEventListener('click', function() {
+                    window.location.href = 'https://vardhan-it.github.io/eventica-1-birthday-event/';
+                });
+            }
+            
+            // Corporate button click handler
+            const corporateBtn = document.getElementById('corporate-btn');
+            if (corporateBtn) {
+                corporateBtn.addEventListener('click', function() {
+                    window.location.href = 'https://vardhan-it.github.io/eventica-1-corporate-events/';
+                });
+            }
+            
+            // Festival button click handler
+            const festivalBtn = document.getElementById('festival-btn');
+            if (festivalBtn) {
+                festivalBtn.addEventListener('click', function() {
+                    window.location.href = 'https://vardhan-it.github.io/eventica-1-festival-events/';
                 });
             }
         });
