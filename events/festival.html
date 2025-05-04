@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Events - Celebrate Life!</title>
+    <link rel="stylesheet" href="events-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        }
+        .festival-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        .package-price {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 5px;
+        }
+        .festival-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .festival-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 300px;
+        }
+        .festival-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .festival-item:hover img {
+            transform: scale(1.1);
+        }
+        .festival-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .countdown-item {
+            text-align: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 100px;
+        }
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        .countdown-label {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        .lineup-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .artist-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .artist-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <h2>Festival Events</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#upcoming">Upcoming</a>
+                <a href="#lineup">Lineup</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h1 class="animate">Experience the Magic of Festivals</h1>
+            <p class="animate">Join us for unforgettable music and cultural celebrations</p>
+            <a href="#tickets" class="btn animate">Get Tickets</a>
+        </div>
+    </section>
+
+    <section id="upcoming" class="section">
+        <div class="container">
+            <h2 class="section-title">Upcoming Festivals</h2>
+            <div class="festival-grid">
+                <div class="festival-item animate">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Summer Music Festival">
+                    <div class="festival-content">
+                        <h3>Summer Music Festival</h3>
+                        <p>July 15-17, 2024</p>
+                    </div>
+                </div>
+                <div class="festival-item animate">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Cultural Festival">
+                    <div class="festival-content">
+                        <h3>Cultural Festival</h3>
+                        <p>August 5-7, 2024</p>
+                    </div>
+                </div>
+                <div class="festival-item animate">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Food & Wine Festival">
+                    <div class="festival-content">
+                        <h3>Food & Wine Festival</h3>
+                        <p>September 10-12, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lineup" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Artists</h2>
+            <div class="lineup-grid">
+                <div class="artist-card animate">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Artist 1">
+                    <h3>The Groove Masters</h3>
+                    <p>Main Stage - Day 1</p>
+                </div>
+                <div class="artist-card animate">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Artist 2">
+                    <h3>Rhythm & Blues</h3>
+                    <p>Main Stage - Day 2</p>
+                </div>
+                <div class="artist-card animate">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Artist 3">
+                    <h3>Electric Dreams</h3>
+                    <p>Main Stage - Day 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="section">
+        <div class="container">
+            <h2 class="section-title">Festival Tickets</h2>
+            <div class="card-container">
+                <div class="card animate">
+                    <div class="card-content">
+                        <h3>Day Pass</h3>
+                        <p class="package-price">$99</p>
+                        <ul class="feature-list">
+                            <li>Single day entry</li>
+                            <li>Access to all stages</li>
+                            <li>Basic amenities</li>
+                            <li>Food & beverage vouchers</li>
+                        </ul>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card animate">
+                    <div class="card-content">
+                        <h3>Weekend Pass</h3>
+                        <p class="package-price">$249</p>
+                        <ul class="feature-list">
+                            <li>3-day entry</li>
+                            <li>VIP stage access</li>
+                            <li>Premium amenities</li>
+                            <li>Exclusive food & beverage</li>
+                            <li>Festival merchandise</li>
+                        </ul>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card animate">
+                    <div class="card-content">
+                        <h3>VIP Experience</h3>
+                        <p class="package-price">$499</p>
+                        <ul class="feature-list">
+                            <li>3-day VIP entry</li>
+                            <li>Backstage access</li>
+                            <li>Luxury amenities</li>
+                            <li>All-inclusive food & drinks</li>
+                            <li>Premium merchandise</li>
+                            <li>Meet & greet with artists</li>
+                        </ul>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="festival-card animate">
+                <form>
+                    <div style="margin-bottom: 1rem;">
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.5rem;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.5rem;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <select style="width: 100%; padding: 0.5rem;">
+                            <option value="">Select Festival</option>
+                            <option value="summer">Summer Music Festival</option>
+                            <option value="cultural">Cultural Festival</option>
+                            <option value="food">Food & Wine Festival</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <select style="width: 100%; padding: 0.5rem;">
+                            <option value="">Select Ticket Type</option>
+                            <option value="day">Day Pass</option>
+                            <option value="weekend">Weekend Pass</option>
+                            <option value="vip">VIP Experience</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <textarea placeholder="Any special requirements?" style="width: 100%; padding: 0.5rem; height: 150px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center;">
+                <h3>Festival Events</h3>
+                <p>Creating unforgettable festival experiences</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

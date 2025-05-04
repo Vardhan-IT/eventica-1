@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventica - Event Planning Made Easy</title>
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="interactive-elements.css">
     <link rel="stylesheet" href="3d-elements.css">
@@ -46,12 +47,12 @@
                 <div class="logo">Eventica</div>
             </div>
             <div class="nav-links">
-                <a href="https://vardhan-it.github.io/eventica-1/" class="active">Home</a>
-                <a href="https://vardhan-it.github.io/eventica-1-about-webpage/">About</a>
-                <a href="https://vardhan-it.github.io/eventica-1-packages/">Packages</a>
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#packages">Packages</a>
                 <a href="#venue-visualization">3D Venue</a>
-                <a href="https://vardhan-it.github.io/eventica-1-contact/">Contact</a>
-                <a href="https://vardhan-it.github.io/eventica-1-add-to-cart-webpage/" id="nav-cart-btn"><i class="fas fa-shopping-cart"></i> Cart <span class="nav-cart-count">0</span></a>
+                <a href="#contact">Contact</a>
+                <a href="#" id="nav-cart-btn"><i class="fas fa-shopping-cart"></i> Cart <span class="nav-cart-count">0</span></a>
             </div>
         </nav>
         
@@ -115,46 +116,64 @@
         <div class="container">
             <h2>Our Event Packages</h2>
             <div class="packages-grid" id="packages-container">
-                <!-- Package cards will be dynamically loaded here based on category selection -->
+                <!-- Elegant Party Package -->
                 <div class="package-card" data-category="party">
-                    <img src="images/elegant-party.jpg" alt="Elegant Party Decor">
-                    <h3>Elegant Party Decor</h3>
-                    <p>Transform your space with our elegant decorations perfect for sophisticated gatherings.</p>
-                    <p class="price">$1,200</p>
-                    <button class="btn view-details-btn">View Details</button>
-                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                    <span></span>
+                    <div class="card-content">
+                        <h3>Elegant Party Decor</h3>
+                        <p>Transform your space with our elegant decorations perfect for sophisticated gatherings.</p>
+                        <p class="price">$1,200</p>
+                        <button class="btn view-details-btn">View Details</button>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
                 </div>
+
+                <!-- Wedding Package -->
                 <div class="package-card" data-category="wedding">
-                    <img src="images/wedding-package.jpg" alt="Wedding Package">
-                    <h3>Wedding Package</h3>
-                    <p>Complete wedding planning service including venue, catering, and decoration.</p>
-                    <p class="price">$5,500</p>
-                    <button class="btn view-details-btn">View Details</button>
-                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                    <span></span>
+                    <div class="card-content">
+                        <h3>Wedding Package</h3>
+                        <p>Complete wedding planning service including venue, catering, and decoration.</p>
+                        <p class="price">$5,500</p>
+                        <button class="btn view-details-btn">View Details</button>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
                 </div>
+
+                <!-- Birthday Package -->
                 <div class="package-card" data-category="birthday">
-                    <img src="images/birthday-surprise.jpg" alt="Birthday Surprise">
-                    <h3>Birthday Surprise</h3>
-                    <p>Make their special day unforgettable with our birthday surprise package.</p>
-                    <p class="price">$850</p>
-                    <button class="btn view-details-btn">View Details</button>
-                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                    <span></span>
+                    <div class="card-content">
+                        <h3>Birthday Surprise</h3>
+                        <p>Make their special day unforgettable with our birthday surprise package.</p>
+                        <p class="price">$850</p>
+                        <button class="btn view-details-btn">View Details</button>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
                 </div>
+
+                <!-- Corporate Package -->
                 <div class="package-card" data-category="corporate">
-                    <img src="images/corporate-event.jpg" alt="Corporate Event">
-                    <h3>Corporate Event Package</h3>
-                    <p>Professional event management for your company meetings and celebrations.</p>
-                    <p class="price">$3,200</p>
-                    <button class="btn view-details-btn">View Details</button>
-                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                    <span></span>
+                    <div class="card-content">
+                        <h3>Corporate Event Package</h3>
+                        <p>Professional event management for your company meetings and celebrations.</p>
+                        <p class="price">$3,200</p>
+                        <button class="btn view-details-btn">View Details</button>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
                 </div>
+
+                <!-- Festival Package -->
                 <div class="package-card" data-category="festival">
-                    <img src="images/festival-package.jpg" alt="Festival Package">
-                    <h3>Festival Experience</h3>
-                    <p>Create a memorable festival experience with our comprehensive planning service.</p>
-                    <p class="price">$7,500</p>
-                    <button class="btn view-details-btn">View Details</button>
-                    <button class="btn add-to-cart-btn">Add to Cart</button>
+                    <span></span>
+                    <div class="card-content">
+                        <h3>Festival Experience</h3>
+                        <p>Create a memorable festival experience with our comprehensive planning service.</p>
+                        <p class="price">$7,500</p>
+                        <button class="btn view-details-btn">View Details</button>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
