@@ -82,8 +82,7 @@ nav {
     border-radius: 50%;
     background-color: white;
     border:  black 5px solid;
-    padding-right:20px ;
-    padding-top: 10px;
+    
 }
 .nav-links1 a {
     color: white;
@@ -92,7 +91,7 @@ nav {
     font-weight: 500;
     transition: color 0.3s ease;
     padding-left:20px;
-    padding-right:30px;
+    padding-right:10px;
 }
 
 .nav-links a {
