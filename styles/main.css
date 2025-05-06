@@ -336,4 +336,167 @@ body {/*
     .package-card:hover .card-content {
         padding: 30px 20px;
     }
+}
+
+/* Navigation Buttons */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(29, 6, 26, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-btn {
+    position: relative;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff0058, #ffbc00);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 0, 88, 0.3);
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 88, 0.4);
+}
+
+.nav-btn:hover::before {
+    opacity: 1;
+}
+
+.nav-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-btn.active {
+    background: linear-gradient(45deg, #ff0058, #ffbc00);
+    box-shadow: 0 0 20px rgba(255, 0, 88, 0.5);
+}
+
+/* Add margin to main content to account for fixed nav */
+main {
+    margin-top: 80px;
+}
+
+/* Responsive styles for navigation */
+@media (max-width: 768px) {
+    .nav-buttons {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-buttons {
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Navigation Styles */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    background: linear-gradient(45deg, #ff0058, #ffbc00);
+    color: #fff;
+}
+
+#nav-cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, #ff0058, #ffbc00);
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+#nav-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 0, 88, 0.3);
+}
+
+.nav-cart-count {
+    background: #fff;
+    color: #ff0058;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Make sure links are clickable */
+.nav-links a {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* Ensure proper stacking context */
+nav {
+    position: relative;
+    z-index: 1000;
 } 
