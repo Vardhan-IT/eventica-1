@@ -82,6 +82,8 @@ nav {
     border-radius: 50%;
     background-color: white;
     border:  black 5px solid;
+    padding-right:20px ;
+    padding-top: 10px;
 }
 .nav-links1 a {
     color: white;
