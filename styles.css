@@ -77,6 +77,16 @@ nav {
     color: #ff6b6b;
 }
 
+.nav-links1 a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-left:20px;
+    padding-right:30px;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
