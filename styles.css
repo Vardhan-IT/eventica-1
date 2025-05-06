@@ -76,7 +76,13 @@ nav {
     font-weight: 700;
     color: #ff6b6b;
 }
-
+.acc-section{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    border:  black 5px solid;
+}
 .nav-links1 a {
     color: white;
     text-decoration: none;
